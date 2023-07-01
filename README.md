@@ -2,6 +2,15 @@
 I have Implement Naive Bayes on my own from scratch for text classification and Compared the Results with built in Multinomial Naive Bayes in Sklearn.
 
 # Features
+* used nltk to import stopwords( to remove the stopwords from our dataset, for better selection of features)
+* used nltk.word_tokenize() funtion to convert text in a list of tokens(words)
+* selectred the list of important features by selecting their frequency in the dataset
+* created a modified 2d matrix of x_dataset with features as columns and row as documents
+  * the value at each cell is the count of feature in the document
+  * it's easier to calculate the probability of a class from the sum of feature values
+* then we use our classifer to fit the given dataset and return a dicitonary that has count of each class's sum of feature values and the total number of words in each class
+* predict, predict_single, probability funciton are used to iteratively calculate each doc's probability of belonging to a prticular class and choosing the class with maximum probability
+* achieving the accuracy_score of 86% with our classifier
 
 # Dataset Overview
 * The Newsgroup dataset is a collection of documents sourced from various newsgroups on Usenet, a distributed discussion system widely used in the early days of the internet. The dataset is commonly employed for text classification tasks and has been widely studied in the field of natural language processing.
