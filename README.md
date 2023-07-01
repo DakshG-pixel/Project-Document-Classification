@@ -8,8 +8,9 @@ I have Implement Naive Bayes on my own from scratch for text classification and 
 * created a modified 2d matrix of x_dataset with features as columns and row as documents
   * the value at each cell is the count of feature in the document
   * it's easier to calculate the probability of a class from the sum of feature values
-* then we use our classifer to fit the given dataset and return a dicitonary that has count of each class's sum of feature values and the total number of words in each class
+* then we use our classifer to fit the given dataset and return a dicitonary that has key's as class's available, which has further keys as feature value and values as the sum of feature value in that particular class,and  the total number of words in each class
 * predict, predict_single, probability funciton are used to iteratively calculate each doc's probability of belonging to a prticular class and choosing the class with maximum probability
+* implemented laplace's correction
 * achieving the accuracy_score of 86% with our classifier
 
 # Dataset Overview
