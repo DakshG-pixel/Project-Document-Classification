@@ -18,11 +18,12 @@ I have Implement Naive Bayes on my own from scratch for text classification and 
 * These documents vary in length and can contain a mix of plain text, HTML formatting, and special characters.
 * there are 20 catogries each with more than 500 articles in it.
 
+# Split the dataset into training and testing sets:
+Used a suitable method to split the dataset into training and testing sets(train-test split from scikit-learn).
+
 # Libraries used in python
 sklearn, numpy, matplotlib, nltk, string
 
 # Evaluation
 * Calculated evaluation metrics(accuracy, precision, recall, confusion matrix, classification report)to assess the performance of the model.
 
-# Split the dataset into training and testing sets:
-Used a suitable method to split the dataset into training and testing sets(train-test split from scikit-learn).
